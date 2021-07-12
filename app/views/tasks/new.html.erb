@@ -1,11 +1,8 @@
-<%= form_for(@task) do |f| %>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-    <%= f.label :details %>
-    <%= f.text_field :details %>
-    <%= f.label :completed %>
-    <%= f.check_box :completed %>
-    <%= f.submit %>
-<% end %>
+<h1>New task</h1>
 
-<%= link_to "Go back to Tasks", tasks_path %>
+<%= render 'form', task: @task %>
+
+<hr>
+<%= link_to tasks_path do %>
+  <i class="fa fa-history"></i> Back to list
+<% end %>
