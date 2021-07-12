@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+     background-color: #F3F6F7;
+ }
+
+ #navbar {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     padding: 20px;
+     background-color:#7B68EF;
+     color: white;
+     font-family: 'Montserrat';
+     font-size: 40px;
+ }
