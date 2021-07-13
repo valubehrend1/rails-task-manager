@@ -1,8 +1,10 @@
-<%= link_to tasks_edit_path(@task.id), class: 'pull-right btn btn-default' do %>
-  <i class="fa fa-pencil"></i> Edit this task
-<% end %>
+<div class="edit-title-container">
+  <%= link_to tasks_edit_path(@task.id), class: 'pull-right btn btn-default' do %>
+    <i class="fa fa-pencil"></i> Edit this task
+  <% end %>
 
-<h1><%= @task.title %></h1>
+  <h1><%= @task.title %></h1>
+</div>
 
 <p class="well"><%= @task.details %></p>
 
@@ -13,6 +15,6 @@
 <% end %>
 
 <hr>
-<%= link_to tasks_path do %>
+<%= link_to tasks_path, class:"btn" do %>
   <i class="fa fa-history"></i> Back to list
 <% end %>

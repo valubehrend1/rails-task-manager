@@ -74,6 +74,8 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    data-confirm-modal (1.6.3)
+      railties (>= 3.0)
     erubi (1.10.0)
     ffi (1.15.3)
     globalid (0.4.2)
@@ -202,6 +204,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  data-confirm-modal
   jbuilder (~> 2.7)
   listen (~> 3.2)
   puma (~> 4.1)

@@ -1,3 +1,7 @@
+// Variables
+$primary-color: #7B68EF;
+$buttons-color: #FDD148;
+
 #tasks {
     padding-left: 0;
     list-style: none;
@@ -5,7 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Raleway';
+    font-family: 'Roboto';
 }
 
 .card {
@@ -15,6 +19,10 @@
     margin-top: 20px;
 }
 
+.task-completed {
+    color: green;
+}
+
 #tasks li {
     padding: 10px;
     font-size: 16px;
@@ -22,13 +30,29 @@
 
 li a {
     color: black;
+    padding-left: 10px;
+}
+
+.btn {
+    border: 1px solid $buttons-color;
+    border-radius: 8px;
+    background-color: $buttons-color;
+    padding: 8px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    transition: 0.5s;
 }
 
 .fa.fa-trash {
     text-align: center;
     float: right;
-    background-color: #A17AF7;
-    border: 1px solid #A17AF7;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
     border-radius: 10px;
     padding: 6px;
     color:white;

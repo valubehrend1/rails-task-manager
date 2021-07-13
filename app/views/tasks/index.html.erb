@@ -2,7 +2,7 @@
 <% @tasks.each do |task| %>
     <li class='card'>
     <% if task.completed %>
-        <i class="fa fa-check-circle-o"></i>
+        <i class="fa fa-check-circle-o task-completed"></i>
     <% else %>
         <i class="fa fa-circle-o"></i>
     <% end %>
@@ -16,6 +16,6 @@
 </ul>
 <hr>
 
-<%= link_to tasks_new_path do %>
+<%= link_to tasks_new_path, class:"btn" do %>
   <i class="fa fa-plus"></i> Add a new task
 <% end %>
